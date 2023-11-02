@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Pendulum</title>
+</head>
+<style>
+    .border {
+        padding: 20px 30px;
+        background-color: black;
+    }
+
+    #pendulumCanvas {
+        height: 200px;
+        width: 5px;
+        background-color: red;
+    }
+
+    #pendulum {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform-origin: top;
+    }
+
+    #square {
+        border: 2px black solid;
+        width: 35px;
+        height: 30px;
+        padding: 30px 0px 0px 20px;
+        background-color: aqua;
+        border-radius: 50%;
+    }
+
+    .more ,.mores{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .more #pendulum {
+        animation: pendulum 2s infinite linear;
+        transform-origin: top;
+    }
+    .mores #pendulum {
+        animation: pendulum 2s infinite linear reverse;
+        transform-origin: top;
+    }
+
+    @keyframes pendulum {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(-70deg);
+        }
+
+        75% {
+            transform: rotate(70deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+</style>
+
+<body>
+    <div class="border"></div>
+    <div class="main">
+        <div class="more">
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+        </div>
+        <div class="mores">
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+        </div>
+        <div class="mores">
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+            <div id="pendulum">
+                <div id="pendulumCanvas" width="400" height="200"></div>
+                <div id="square">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
